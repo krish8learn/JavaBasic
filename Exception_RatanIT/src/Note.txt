@@ -1,0 +1,51 @@
+Exceptions are three types 1.checked, 2.Unchecked, 3.Errors
+
+UNchecked Exceptions are child classes of runtime Exception
+Checked exceptions are child class of exception
+
+Exceptions always occured at runtime
+
+checked exception --> compiler shows information of the Exceptions
+Unchecked exception --> compiler does not show any information
+
+
+Errors are caused by lack of system resources
+
+way to handle exception ----> try catch block, throw
+
+not possible to handle errors, we need to change implementation of logic in order to avoid errors
+
+checking classes in command line
+#javap ExceptionName
+
+---------------------------------------------------------------------------------------------
+Root class of exception handling is Throwable
+-------------------------------------------------------------------------------------------
+
+UNCHECKED Exceptions-------------------------------------------
+Throwable -----> Exceptions, Errors
+
+
+Exceptions ----
+runtimeExceptions
+Interuppt
+InputOutputExceptions
+SQLExceptions
+ServletExceptions
+
+Errors------
+StackOverflow
+AWT
+OutofMemory
+-----------------------------------------------------------------------------------------------------------
+
+KEYWORDS-----------
+try
+catch
+finally
+throw
+throws
+-----------------------------------------------------------------------------------------------------
+
+when we are not handling any exceptions JVM automatically handle exceptions using default exception handler
+using printstacktrace methods
