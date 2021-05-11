@@ -1,0 +1,20 @@
+Stream Steps 
+    open 
+    read/write 
+    close 
+
+----Byte(input, output) 
+----Character(reader, writer)
+----------------------------------------------------------------------------------------------------------
+bytes
+Inputstream, outputstream are abstract classes
+
+----------------------------------------------------------------------------------------------
+serialization := Its a process of sending data(java objects) from one location to another(DB, file, memory) using bytestream.
+Deserialization := process of reconstructing data(java objects)
+
+ObjectOutputstream for serialization
+ObjectInputStream for Deserialization
+
+implements marker ubterface java.io.serializable
+
