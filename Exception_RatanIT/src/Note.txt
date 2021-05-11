@@ -37,6 +37,8 @@ Errors------
 StackOverflow
 AWT
 OutofMemory
+AssertionsError   (-ea)
+NoClassDefFoundError
 -----------------------------------------------------------------------------------------------------------
 
 KEYWORDS-----------
@@ -49,3 +51,42 @@ throws
 
 when we are not handling any exceptions JVM automatically handle exceptions using default exception handler
 using printstacktrace methods
+
+--------------------------------------------------------------------------------------------------------------
+
+finally only execued when the control enters into try block, without try block finally block cannot be executed
+if system.exit(0) apperas before entering finally block then finally block will not be executed.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Throws does not handle error it just delegate the error which is handled by cover method if that 
+has the try catch blcok otherwise it will be handled by JVM
+
+----------------------------------------------------------------------------------------------------------------
+Unchecked exceptios are automatically propagated.
+Checked exceptios are propagated by using throws keywords
+
+------------------------------------------------------------------------------------------------------
+
+Throw keyword ----create new exceptions and give it to JVM
+To create, throw checked exceptions extends Exception class 
+To create, throw Unchecked exceptions extends RuntimeException class
+it also throw exceptions which could be user-defined or pre-defined handled by JVM
+we cannot insert any statement  after throw keyword
+---------------------------------------------------------------------------------------------------
+
+with checked exceptions code will not compile
+    try catch must be PRESENT to handle
+with Unchecked exceptions code will compile
+    try catch is optional but recommended to use
+------------------------------------------------------------------------------------------------------
+AssertionsError
+
+1.Assert boolean-expression;
+    AssertionError
+2.assert boolean-expression : message
+    AssertionsError(ErrorMessage)
+
+ Disabled by Default
+ java -ea className ----- enable at class level
+ java -ea -da className ----- enable and Disabled at class level   
