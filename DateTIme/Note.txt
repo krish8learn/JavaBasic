@@ -1,0 +1,7 @@
+JAVA uses ISO 8601 means gregorian calender system 
+Java.util package contains Legacy date time api
+These are mutable not thread safe
+
+New date time api contained by java.time package from java 8 
+its immutable, thread safe
+[date]T[time][zone offset]
